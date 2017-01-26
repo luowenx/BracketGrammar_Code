@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Class/Braccket.h"
 
 @interface ViewController ()
 
@@ -16,13 +17,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+//    [self negativeArrayTest];
+    [self diggyDictTest];
 }
 
+-(void) negativeArrayTest
+{
+    NegativeArray *negativeArray = [[NegativeArray alloc] init];
+    negativeArray[0] = @(10);
+    negativeArray[1] = @"123";
+    negativeArray[5] = @"abc";
+    
+    NSLog(@"negativeArray: %@", negativeArray);
+    NSLog(@"negativeArray[3]: %@", negativeArray[3]);
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+-(void)diggyDictTest
+{
+    DiggyDict *diggyDic = [[DiggyDict alloc] init];
+    diggyDic[@"a"] = @"aaa";
+    diggyDic[@"b"] = @"bbb";
+    diggyDic[@"c/b/a"] = @"cba";
+
+    
+    NSLog(@"diggyDic: %@", diggyDic);
+    NSLog(@"diggyDic[3]: %@", diggyDic[@"c/b/a"]);
 }
 
 

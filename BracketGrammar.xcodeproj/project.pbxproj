@@ -13,6 +13,8 @@
 		2B7FDA3C1E39A3430026C636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7FDA3A1E39A3430026C636 /* Main.storyboard */; };
 		2B7FDA3E1E39A3430026C636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B7FDA3D1E39A3430026C636 /* Assets.xcassets */; };
 		2B7FDA411E39A3430026C636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7FDA3F1E39A3430026C636 /* LaunchScreen.storyboard */; };
+		2B7FDA4B1E39A3A20026C636 /* NegativeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7FDA4A1E39A3A20026C636 /* NegativeArray.m */; };
+		2B7FDA4E1E39A45D0026C636 /* DiggyDict.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7FDA4D1E39A45D0026C636 /* DiggyDict.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		2B7FDA3D1E39A3430026C636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B7FDA401E39A3430026C636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B7FDA421E39A3430026C636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B7FDA491E39A3A20026C636 /* NegativeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NegativeArray.h; sourceTree = "<group>"; };
+		2B7FDA4A1E39A3A20026C636 /* NegativeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NegativeArray.m; sourceTree = "<group>"; };
+		2B7FDA4C1E39A45D0026C636 /* DiggyDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiggyDict.h; sourceTree = "<group>"; };
+		2B7FDA4D1E39A45D0026C636 /* DiggyDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiggyDict.m; sourceTree = "<group>"; };
+		2B7FDA4F1E39A4F90026C636 /* Braccket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Braccket.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +65,11 @@
 		2B7FDA301E39A3430026C636 /* BracketGrammar */ = {
 			isa = PBXGroup;
 			children = (
+				2B7FDA481E39A35E0026C636 /* Class */,
 				2B7FDA341E39A3430026C636 /* AppDelegate.h */,
 				2B7FDA351E39A3430026C636 /* AppDelegate.m */,
 				2B7FDA371E39A3430026C636 /* ViewController.h */,
 				2B7FDA381E39A3430026C636 /* ViewController.m */,
-				2B7FDA3A1E39A3430026C636 /* Main.storyboard */,
-				2B7FDA3D1E39A3430026C636 /* Assets.xcassets */,
-				2B7FDA3F1E39A3430026C636 /* LaunchScreen.storyboard */,
-				2B7FDA421E39A3430026C636 /* Info.plist */,
 				2B7FDA311E39A3430026C636 /* Supporting Files */,
 			);
 			path = BracketGrammar;
@@ -74,9 +78,25 @@
 		2B7FDA311E39A3430026C636 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B7FDA3A1E39A3430026C636 /* Main.storyboard */,
+				2B7FDA3D1E39A3430026C636 /* Assets.xcassets */,
+				2B7FDA3F1E39A3430026C636 /* LaunchScreen.storyboard */,
+				2B7FDA421E39A3430026C636 /* Info.plist */,
 				2B7FDA321E39A3430026C636 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B7FDA481E39A35E0026C636 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2B7FDA4F1E39A4F90026C636 /* Braccket.h */,
+				2B7FDA491E39A3A20026C636 /* NegativeArray.h */,
+				2B7FDA4A1E39A3A20026C636 /* NegativeArray.m */,
+				2B7FDA4C1E39A45D0026C636 /* DiggyDict.h */,
+				2B7FDA4D1E39A45D0026C636 /* DiggyDict.m */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7FDA4B1E39A3A20026C636 /* NegativeArray.m in Sources */,
 				2B7FDA391E39A3430026C636 /* ViewController.m in Sources */,
+				2B7FDA4E1E39A45D0026C636 /* DiggyDict.m in Sources */,
 				2B7FDA361E39A3430026C636 /* AppDelegate.m in Sources */,
 				2B7FDA331E39A3430026C636 /* main.m in Sources */,
 			);
